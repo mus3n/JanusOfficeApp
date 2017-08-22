@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="Scripts/FabricUI/MessageBanner.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="Scripts/FileSaver.min.js" type="text/javascript"></script>
+
+    <!-- Verwenden Sie Folgendes zum Aktivieren von Offlinedebuggen mithilfe eines lokalen Verweises auf "Office.js":                        -->
+    <!-- <script src="Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+
+    <!-- Weitere Informationen zum Office-UI-Fabric finden Sie unter http://aka.ms/office-ui-fabric. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    
+    <!-- Verwenden Sie Folgendes zum Aktivieren der Offlineverwendung des Office-UI-Fabrics: -->
+    <!-- link rel="stylesheet" href="Content/fabric.min.css" -->
+    <!-- link rel="stylesheet" href="Content/fabric.components.min.css" -->
+</head>
+<body>
+    
+    <div class="header">
+        <div class="header-headline">
+            <p class="ms-font-xxl ms-fontColor-neutralSecondary ms-fontWeight-semilight" style="margin-top:0">Janus Office App</p>
+            
+        </div>
+        <div class="header-Logo">
+            <img src="Images/JanusImages/JanusLogo.png" class="header-logo-img sendImageToClient" />
+        </div>
+    </div>
+    <hr />
+    <div id="content-main">
+        <div class="padding">
+            <div class="container">
+                <p class="ms-font-xxl ms-fontColor-neutralSecondary ms-fontWeight-semilight" style="margin-top:-15px">Slide Bibliothek</p>
+                <button class="ms-Button ms-Button--primary" id="btnDownload1">
+                    <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+                    <span class="ms-Button-label" id="button-text1"></span>
+                    <span class="ms-Button-description" id="button-desc1"></span>
+                </button>
+            </div>
+            <hr/>
+            <br/>
+            <div class="container">
+                <p class="ms-font-xxl ms-fontColor-neutralSecondary ms-fontWeight-semilight" style="margin-top:-15px">Bilder Gallerie</p>
+                <div class="image-gallery">
+                    <img src="Images/JanusImages/JanusBanner.png"  class="sendImageToClient" />
+                    <img src="Images/JanusImages/JanusLogo.png" class="sendImageToClient" />
+                    <img src="Images/Background/avi-richards-183715.jpg" class="sendImageToClient" />
+                    <img src="Images/Background/dustin-lee-19667.jpg" class="sendImageToClient" />
+                    <img src="Images/Background/Image6.jpg" class="sendImageToClient" />
+                    <img src="Images/Background/juliette-leufke-154599.jpg" class="sendImageToClient" />
+                    <img src="Images/Background/olu-eletu-13086.jpg" class="sendImageToClient" />
+                    <img src="Images/Background/olu-eletu-32387.jpg" class="sendImageToClient" />
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Eine FabricUI-Komponente, die für die Anzeige von Benachrichtigungen verwendet wird. -->
+    <div class="ms-MessageBanner" style="position:absolute;bottom: 0;">
+        <div class="ms-MessageBanner-content">
+            <div class="ms-MessageBanner-text">
+                <div class="ms-MessageBanner-clipper">
+                    <div class="ms-font-m-plus ms-fontWeight-semibold" id="notificationHeader"></div>
+                    <div class="ms-font-m ms-fontWeight-semilight" id="notificationBody"></div>
+                </div>
+            </div>
+            <button class="ms-MessageBanner-expand" style="display:none"><i class="ms-Icon ms-Icon--chevronsDown"></i> </button>
+            <div class="ms-MessageBanner-action"></div>
+        </div>
+        <button class="ms-MessageBanner-close"> <i class="ms-Icon ms-Icon--x"></i> </button>
+    </div>
+</body>
+</html>

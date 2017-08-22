@@ -1,0 +1,65 @@
+﻿/* Seitenspezifischer Stil */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 40px; /* bottom = footer height */
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+}
+
+.padding {
+    padding: 15px;
+}
+
+.margin-0-auto{
+    margin: 0 auto;
+}
+
+.janus-blau-background{
+    background-color: blue;
+}
+
+.header{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.header-headline{
+    position: relative;
+    margin-left:5px;
+    margin-top: 20px;
+    width:100%;
+}
+
+.header-Logo{
+    position: absolute;
+    top:20px;
+    right:20px;
+    width:15%;
+}
+
+.header-logo-img{
+    width: 50px;
+}
+
+.image-gallery{
+    width:80%;
+    margin: 0 auto;
+    float: left;
+    border: 1px solid blue;
+}
+
+    .image-gallery img {
+        max-width: 80%;
+        max-height: 40px;
+        margin: 10px auto;
+        padding: 10px;
+    }
